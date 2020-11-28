@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Places</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- botones -->
+    <string name="accion_mostrar">Show Places</string>
+    <string name="accion_preferencias">Preferences</string>
+    <string name="accion_acerca_de">About</string>
+    <string name="accion_salir">Exit</string>
+    <string name="nombre">Name</string>
+    <string name="direccion">Address</string>
+    <string name="telefono">Phone</string>
+    <string name="comentario">Commentary</string>
+    <string name="introduce_tus_notas">Enter your notes</string>
+    <string name="pagina_web">Website</string>
+    <string name="telefono_para_contactar">contact number</string>
+    <string name="direccion_del_lugar">address of the place</string>
+    <string name="algo_que_identifique_el_lugar">something that identifies the place</string>
+    <string name="tipo_de_lugar">Place type</string>
+    <string name="texto_acerca_de">This program has been developed as an example in the Android course to demonstrate how new activities can be launched from the main activity.</string>
+    <string name="configuracion">Preferences</string>
+    <string name="acerca_de">About&#8230;</string>
+    <string name="menu_configuracion">Preferences</string>
+    <string name="menu_acerca_de">About&#8230;</string>
+    <string name="menu_buscar">Search</string>
+    <string name="vistalugar_nombres_del_lugar">place names</string>
+    <string name="vistalugar_comentario">remarks</string>
+    <string name="vistalugar_direccion">address</string>
+    <string name="vistalugar_eliminar_foto">delete photo</string>
+    <string name="vistalugar_fecha">date</string>
+    <string name="vistalugar_fotografia">photo</string>
+    <string name="vistalugar_hora">time</string>
+    <string name="vistalugar_logo_camara">camera logo</string>
+    <string name="vistalugar_logo_galeria">logo gallery</string>
+    <string name="vistalugar_telefono_edicion_lugares">telephone</string>
+    <string name="vistalugar_tipo_de_lugar">type of place</string>
+    <string name="cancelar_modificacion">Cancel Update</string>
+    <string name="dialogo_borrar_aceptar">Accept</string>
+    <string name="dialogo_borrar_cancelar">Cancel</string>
+    <string name="dialogo_borrar_texto">Do you want to delete the current place?</string>
+    <string name="dialogo_borrar_titulo">Delete Place</string>
+    <string name="elemento_lista_direccion_del_lugar">address of the place</string>
+    <string name="elemento_lista_fotografia">photo</string>
+    <string name="elemento_lista_nombres_del_lugar">place names</string>
+    <string name="guardar_modificacion">Save changes</string>
+    <string name="icono_camara">camera icon</string>
+    <string name="icono_cerrar">close icon</string>
+    <string name="icono_galeria">gallery symbol</string>
+    <string name="texto_modal_buscar">Enter the identifier to search</string>
+    <string name="titulo_modal_buscar">Place selection</string>
+</resources>

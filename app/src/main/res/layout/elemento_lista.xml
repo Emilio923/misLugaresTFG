@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019. Miguel Angel
+  -->
+
+<!--
+The question mark (?) means it's a reference to a resource value in
+the currently applied theme. See the linuxtopia Android Dev Guide
+
+https://developer.android.com/guide/topics/resources/providing-resources
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <ImageView android:id="@+id/foto"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:contentDescription="@string/elemento_lista_fotografia"
+        android:src="@drawable/bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView android:id="@+id/nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/elemento_lista_nombres_del_lugar"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/foto"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView android:id="@+id/direccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/elemento_lista_direccion_del_lugar"
+        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintStart_toEndOf="@+id/foto"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RatingBar android:id="@+id/valoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:isIndicator="true"
+        android:rating="3"
+        app:layout_constraintTop_toBottomOf="@id/direccion"
+        app:layout_constraintLeft_toRightOf="@+id/foto"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@id/valoracion"
+        android:gravity="end"
+        android:text="@string/km"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/valoracion"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

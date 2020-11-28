@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">meine Orte</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- botones -->
+    <string name="accion_mostrar">Orte anzeigen</string>
+    <string name="accion_preferencias">Einstellungen</string>
+    <string name="accion_acerca_de">Über</string>
+    <string name="accion_salir">Ausgang</string>
+    <string name="nombre">Name</string>
+    <string name="direccion">Adresse</string>
+    <string name="telefono">Telefon</string>
+    <string name="comentario">Kommentar</string>
+    <string name="introduce_tus_notas">Geben Sie Ihre Notizen ein</string>
+    <string name="pagina_web">Website</string>
+    <string name="telefono_para_contactar">Kontakt Nummer</string>
+    <string name="direccion_del_lugar">address of the place</string>
+    <string name="algo_que_identifique_el_lugar">etwas, das den Ort identifiziert</string>
+    <string name="tipo_de_lugar">Ortstyp</string>
+    <string name="texto_acerca_de">Dieses Programm wurde als Beispiel im Android-Kurs entwickelt, um zu demonstrieren, wie neue Aktivitäten aus der Hauptaktivität heraus gestartet werden können.</string>
+    <string name="configuracion">Vorlieben</string>
+    <string name="acerca_de">Über&#8230;</string>
+    <string name="menu_configuracion">Vorlieben</string>
+    <string name="menu_acerca_de">Über&#8230;</string>
+    <string name="menu_buscar">herholen</string>
+    <string name="vistalugar_nombres_del_lugar">ortsnamen</string>
+    <string name="vistalugar_comentario">kommentar</string>
+    <string name="vistalugar_direccion">adresse</string>
+    <string name="vistalugar_eliminar_foto">foto löschen</string>
+    <string name="vistalugar_fecha">datum</string>
+    <string name="vistalugar_fotografia">foto</string>
+    <string name="vistalugar_hora">uhr</string>
+    <string name="vistalugar_logo_camara">kamera logo</string>
+    <string name="vistalugar_logo_galeria">logo galerie</string>
+    <string name="vistalugar_telefono_edicion_lugares">telefon</string>
+    <string name="vistalugar_tipo_de_lugar">art des ortes</string>
+    <string name="cancelar_modificacion">Änderung abbrechen</string>
+    <string name="dialogo_borrar_aceptar">Akzeptieren</string>
+    <string name="dialogo_borrar_cancelar">Abbrechen</string>
+    <string name="dialogo_borrar_texto">Möchten Sie den aktuellen Ort löschen?</string>
+    <string name="dialogo_borrar_titulo">Ort löschen</string>
+    <string name="elemento_lista_direccion_del_lugar">address of the place</string>
+    <string name="elemento_lista_fotografia">foto</string>
+    <string name="elemento_lista_nombres_del_lugar">ortsnamen</string>
+    <string name="guardar_modificacion">Guardar modificación</string>
+    <string name="icono_camara">Kamera-Symbol</string>
+    <string name="icono_cerrar">schließen-Symbol</string>
+    <string name="icono_galeria">Galerie-Symbol</string>
+    <string name="texto_modal_buscar">Geben Sie die zu suchende ID ein</string>
+    <string name="titulo_modal_buscar">Ortsauswahl</string>
+</resources>

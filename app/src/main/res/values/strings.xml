@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Mis Lugares</string>
+
+    <string name="action_settings">Configuración</string>
+
+    <!-- botones -->
+    <string name="accion_mostrar">Mostrar Lugares</string>
+    <string name="accion_preferencias">Preferencias</string>
+    <string name="accion_acerca_de">Acerca de</string>
+    <string name="accion_salir">Salir</string>
+    <string name="nombre">Nombre</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Teléfono</string>
+    <string name="url" translatable="false">URL</string>
+    <string name="comentario">Comentario</string>
+    <string name="introduce_tus_notas">Introduce tus notas</string>
+    <string name="pagina_web">Sitio Web</string>
+    <string name="telefono_para_contactar">teléfono para contactar</string>
+    <string name="direccion_del_lugar">dirección del lugar</string>
+    <string name="algo_que_identifique_el_lugar">algo que identifique el lugar</string>
+    <string name="tipo_de_lugar">Tipo de Lugar</string>
+    <string name="texto_acerca_de">Este programa ha sido desarrollado como ejemplo en el curso de Android para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
+    <string name="configuracion">Configuración</string>
+    <string name="acerca_de">Acerca de&#8230;</string>
+    <string name="menu_configuracion">Configuración</string>
+    <string name="menu_acerca_de">Acerca de&#8230;</string>
+    <string name="menu_buscar">Buscar</string>
+    <string name="vistalugar_nombres_del_lugar">Nombres del lugar</string>
+    <string name="vistalugar_telefono_edicion_lugares">teléfono</string>
+    <string name="vistalugar_direccion">dirección</string>
+    <string name="vistalugar_tipo_de_lugar">tipo de lugar</string>
+    <string name="vistalugar_comentario">comentario</string>
+    <string name="vistalugar_fecha">fecha</string>
+    <string name="vistalugar_hora">hora</string>
+    <string name="vistalugar_fotografia">fotografía</string>
+    <string name="vistalugar_logo_camara">logo cámara</string>
+    <string name="vistalugar_logo_galeria">logo galería</string>
+    <string name="vistalugar_eliminar_foto">Eliminar foto</string>
+    <string name="elemento_lista_fotografia">fotografía</string>
+    <string name="elemento_lista_nombres_del_lugar">Nombres del lugar</string>
+    <string name="elemento_lista_direccion_del_lugar">dirección del lugar</string>
+    <string name="icono_camara">icono cámara</string>
+    <string name="icono_galeria">icono galería</string>
+    <string name="icono_cerrar">icono cerrar</string>
+
+    <string name="dialogo_borrar_cancelar">Cancelar</string>
+    <string name="dialogo_buscar_default_value" translatable="false">0</string>
+    <string name="guardar_modificacion">Guardar modificación</string>
+    <string name="cancelar_modificacion">Cancelar modificación</string>
+    <string name="dialogo_borrar_aceptar">Aceptar</string>
+    <string name="dialogo_borrar_texto">¿Desea borrar el lugar actual?</string>
+    <string name="dialogo_borrar_titulo">Borrar Lugar</string>
+    <string name="texto_modal_buscar">Introduzca el texto a buscar</string>
+    <string name="titulo_modal_buscar">Selección del Lugar</string>
+    <string name="km">... Km</string>
+
+</resources>

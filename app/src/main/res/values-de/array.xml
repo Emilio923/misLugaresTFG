@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="tiposOrden">
+        <item>Erstellung</item>
+        <item>Bewertung</item>
+        <item>Entfernung</item>
+    </string-array>
+
+    <string-array name="tiposOrdenValores">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="tiposNotificaciones">
+        <item>Neue Orte</item>
+        <item>In meiner Nähe</item>
+        <item>Am besten bewertet</item>
+    </string-array>
+    <string-array name="tiposNotificacionesValores">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

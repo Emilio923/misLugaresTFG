@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal">
+    <CheckBoxPreference
+        android:key="notificaciones"
+        android:summary="Benachrichtigen, wenn wir in der Nähe eines Ortes sind"
+        android:title="Benachrichtigungen senden" />
+    <EditTextPreference
+        android:defaultValue="12"
+        android:inputType="number"
+        android:key="maximo"
+        android:summary="Begrenzt die Anzahl der in der Liste angezeigten Werte"
+        android:title="Maximal anzuzeigende Orte" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/tiposOrden"
+        android:entryValues="@array/tiposOrdenValores"
+        android:key="orden"
+        android:summary="Vor welchen Orten möchten Sie erscheinen"
+        android:title="Sortierkriterien" />
+    <PreferenceScreen android:title="E-Mail-Benachrichtigungen">
+        <!--<PreferenceCategory android:title="Notificaciones por correo"> -->
+        <CheckBoxPreference
+            android:key="correos"
+            android:summary="E-Mails mit Informationen zu Orten erhalten"
+            android:title="E-Mails empfangen" />
+        <EditTextPreference
+            android:inputType="textEmailAddress"
+            android:key="correo"
+            android:summary="Konto, an das Benachrichtigungen gesendet werden"
+            android:title="E-Mail-Adresse" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/tiposNotificaciones"
+            android:entryValues="@array/tiposNotificacionesValores"
+            android:key="tipos"
+            android:summary="Welche Art von E-Mails möchten Sie erhalten"
+            android:title="Art der Benachrichtigungen" />
+        <!-- </PreferenceCategory> -->
+    </PreferenceScreen>
+
+</PreferenceScreen>

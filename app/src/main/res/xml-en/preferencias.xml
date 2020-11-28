@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal">
+    <CheckBoxPreference
+        android:key="notificaciones"
+        android:summary="Notify if we are near a place"
+        android:title="Send notifications" />
+    <EditTextPreference
+        android:defaultValue="12"
+        android:inputType="number"
+        android:key="maximo"
+        android:summary="Limits the number of values ​​shown in the list"
+        android:title="Maximum places to display" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/tiposOrden"
+        android:entryValues="@array/tiposOrdenValores"
+        android:key="orden"
+        android:summary="What places do you want to appear firstly"
+        android:title="Sorting criteria" />
+    <PreferenceScreen android:title="Email notifications">
+        <!--<PreferenceCategory android:title="Notificaciones por correo"> -->
+        <CheckBoxPreference
+            android:key="correos"
+            android:summary="Receive emails with information about places"
+            android:title="Receive emails" />
+        <EditTextPreference
+            android:inputType="textEmailAddress"
+            android:key="correo"
+            android:summary="Account where notifications will be sent"
+            android:title="Email address" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/tiposNotificaciones"
+            android:entryValues="@array/tiposNotificacionesValores"
+            android:key="tipos"
+            android:summary="What kind of emails do you want to receive"
+            android:title="Type of notifications" />
+        <!-- </PreferenceCategory> -->
+    </PreferenceScreen>
+
+</PreferenceScreen>

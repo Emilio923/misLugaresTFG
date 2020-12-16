@@ -5,8 +5,12 @@
 package net.iescierva.mim.mislugares2019.datos;
 
 import android.database.Cursor;
+import android.util.Log;
+import android.widget.Toast;
 
 import net.iescierva.mim.mislugares2019.modelo.Lugar;
+
+import static android.widget.Toast.LENGTH_SHORT;
 
 public class AdaptadorLugaresBD extends AdaptadorLugares {
 
@@ -35,10 +39,12 @@ public class AdaptadorLugaresBD extends AdaptadorLugares {
     //averigua el ROWID dada la posición en el listado (o cursor, que es lo mismo)
     public int idPosicion(int posicion) {
         cursor.moveToPosition(posicion);
-        if (cursor.getCount() > 0)
+        if (cursor.getCount() > 0){
             return cursor.getInt(0);
-        else
+        } else{
             return -1;
+        }
+
     }
 
     //dada la posición en el listado averigua el ROWID

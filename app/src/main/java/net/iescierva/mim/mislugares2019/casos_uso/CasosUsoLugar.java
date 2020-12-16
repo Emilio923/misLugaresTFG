@@ -71,14 +71,19 @@ public class CasosUsoLugar {
         if (fragmentVista != null) {
             fragmentVista.pos = pos;
             fragmentVista._id = adaptador.idPosicion(pos);
+            Log.d("dato", "dato1");
             fragmentVista.update();
         } else {
             Intent intent = new Intent(actividad, VistaLugarActivity.class);
             intent.putExtra("pos", pos);
-            if (fragment != null)
+            Log.d("dato", "dato2");
+            if (fragment != null){
+                Log.d("dato", "dato3");
                 fragment.startActivityForResult(intent, 0);
-            else
+            } else{
+                Log.d("dato", "dato4");
                 actividad.startActivityForResult(intent, 0);
+            }
         }
     }
 
@@ -98,7 +103,7 @@ public class CasosUsoLugar {
                         lugares.delete(id);
                         adaptador.setCursor(lugares.extraeCursor());
                         adaptador.notifyDataSetChanged();
-                        //actividad.finish();
+                        actividad.finish();
                     }
                 })
                 .setNegativeButton(R.string.dialogo_borrar_cancelar, null)

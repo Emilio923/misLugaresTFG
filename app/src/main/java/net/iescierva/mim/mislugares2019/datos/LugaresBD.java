@@ -11,6 +11,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import net.iescierva.mim.mislugares2019.Aplicacion;
 import net.iescierva.mim.mislugares2019.modelo.GeoException;

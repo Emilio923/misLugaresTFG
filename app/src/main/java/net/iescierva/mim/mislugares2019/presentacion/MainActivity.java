@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         separador = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
 
         //Reproducir música MIDI
-        mp = MediaPlayer.create(this, R.raw.audio);
-        mp.start();
+        //mp = MediaPlayer.create(this, R.raw.audio);
+        //mp.start();
 
         usoLocalizacion = new CasosUsoLocalizacion(this,
                 SOLICITUD_PERMISO_LOCALIZACION);
@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         int id = Integer.parseInt(entrada.getText().toString());
+                        Log.d("dato", "id: " + id);
                         usoLugar.mostrar(id);
                     }
                 })
@@ -178,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     @Override
     protected void onStart() {
         super.onStart();
-        mp.start();
+        //mp.start();
         if (MOSTRAR_EVENTO)
             Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
     }
@@ -192,7 +193,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         //no es necesaario esto, ya se hace en onLocationChanged
         //adaptador.notifyDataSetChanged();
 
-        mp.start();
+        //mp.start();
         usoLocalizacion.activar();
         if (MOSTRAR_EVENTO)
             Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
@@ -209,7 +210,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
     @Override
     protected void onStop() {
-        mp.pause();
+        //mp.pause();
         if (MOSTRAR_EVENTO)
             Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
         super.onStop();
@@ -218,14 +219,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     @Override
     protected void onRestart() {
         super.onRestart();
-        mp.start();
+        //mp.start();
         if (MOSTRAR_EVENTO)
             Toast.makeText(this, "onRestart", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onDestroy() {
-        mp.stop();
+        //mp.stop();
         if (MOSTRAR_EVENTO)
             Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
         super.onDestroy();
@@ -245,7 +246,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         super.onRestoreInstanceState(estadoGuardado);
         if (estadoGuardado != null && mp != null) {
             int pos = estadoGuardado.getInt("posicion");
-            mp.seekTo(pos);
+            //mp.seekTo(pos);
         }
     }
 

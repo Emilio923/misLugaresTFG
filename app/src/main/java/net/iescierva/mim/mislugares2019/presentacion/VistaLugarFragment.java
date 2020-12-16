@@ -99,8 +99,9 @@ public class VistaLugarFragment extends Fragment {
         v.findViewById(R.id.camara).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Log.e("camara", "tomar foto 2");
-                usoLugar.tomarFoto(RESULTADO_FOTO);
-                Log.e("camara", "resultado: " + usoLugar.tomarFoto(RESULTADO_FOTO));
+                uriUltimaFoto = usoLugar.tomarFoto(RESULTADO_FOTO);
+                Log.e("camara", "resultadooooo: " + usoLugar.tomarFoto(RESULTADO_FOTO));
+                Log.e("camara", "resultado2: " + uriUltimaFoto);
             }
         });
         v.findViewById(R.id.hora).setOnClickListener(new View.OnClickListener() {
@@ -124,7 +125,14 @@ public class VistaLugarFragment extends Fragment {
         lugares = ((Aplicacion) getActivity().getApplication()).getLugares();
         usoLugar = new CasosUsoLugarFecha(getActivity(), this, lugares, adaptador);
         //lugar = lugares.elemento(pos);
+        Log.d("dato", "akiiiiii");
         lugar = adaptador.lugarPosicion(pos);
+        if(lugar == null){
+            Toast.makeText(getContext(), "El ID seleccionado no se relaciona con ningun lugar", Toast.LENGTH_LONG).show();
+            //Intent intent = new Intent(this, EdicionLugarActivity.class);
+            //startActivity(intent);
+        }
+        Log.d("dato", "hola");
     }
 
     public void update() {   //anteriormente actualizaVistas()
